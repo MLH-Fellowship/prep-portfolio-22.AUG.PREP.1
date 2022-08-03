@@ -1,15 +1,55 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
+- name: Anwaar Khalid
+  location: Kashmir, J&K, India
+  img: Anwaar.jpg
+  Github: "https://github.com/hello-fri-end"
+  Linkedin: "https://www.linkedin.com/in/anwaar-khalid/"
+  Twitter: "https://twitter.com/"
+  Resume: "https://drive.google.com/file/d/1ywXpK6RibZCnxq32cCLpJdPpbmVynMbQ/view?usp=sharing"
 
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
+- name: Gopi Vaibhav
+  location: Lucknow, India
+  img: gopi.jpg
+  Github: "https://github.com/gopivaibhav"
+  Linkedin: "https://www.linkedin.com/in/gopivaibhav"
+  Twitter: "https://twitter.com/gopi_vaibhav"
+  Resume: "https://drive.google.com/file/u/1/d/11NzSTJbHvnJb7KBS0dRKlkii4XdyNtD7/view"
 
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
+- name: Nawed Ali
+  location: New Delhi, India
+  img: Nawed.jpg
+  Github: "https://github.com/nawed2611"
+  Linkedin: "https://www.linkedin.com/in/nawedali/"
+  Twitter: "https://twitter.com/nawed2611"
+  Resume: "https://drive.google.com/file/d/1lXsx2moVoK0O93Yn04wf4ntVZ5RQaSRm/view?usp=sharing"
 
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
+- name: Mohamed Youssef
+  location: Port said, Egypt
+  img: mohamed.jpeg
+  Github: "https://github.com/JooZef315"
+  Linkedin: "https://www.linkedin.com/in/mohamed-youssef-149ab41b6/"
+  Twitter: "https://twitter.com/"
+  Resume: "https://drive.google.com/"
+
+- name: Suven Pandey
+  location: Kathmandu, Nepal
+  img: Suven.jpg
+  Github: "https://github.com/Suven-p"
+  Linkedin: "https://www.linkedin.com/in/suven-pandey-b50bb517a/"
+  Twitter: "https://twitter.com/Suvenpandey1"
+  Resume: "https://www.overleaf.com/read/hndrmxcwypty"
+
+- name: Anoushka Jha
+  location: Patna, Bihar, India
+  img: Anoushka.jpg
+  Github: "https://github.com/BabyElias"
+  Linkedin: "https://www.linkedin.com/in/anoushka-jha-359736227/"
+  Twitter: "https://twitter.com/"
+  Resume: "https://drive.google.com/file/d/1qWjGMAtcEX2Zdvhfwn-cacPwZNCZGewv/view?usp=sharing"
+
+- name: Juhie Chandra
+  location: India
+  img: Juhie.jpeg
+  Github: "https://github.com/juhiechandra"
+  Linkedin: "https://www.linkedin.com/in/juhiechandra-02/"
+  Twitter: "https://twitter.com/CerulianJ"
+  Resume: "https://drive.google.com/file/d/1USDvZ4Y9Kk3DUVtUluj_G5-3Hz9lCVVl/view?usp=sharing"
