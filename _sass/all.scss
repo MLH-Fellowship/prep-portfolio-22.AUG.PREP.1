@@ -4,7 +4,7 @@
 @import 'profile';
 @import 'page';
 
-html {
+html, html[data-theme="light"] {
   --background-color: white;
   --card-background-color: white; 
   --link-color: rgb(0, 112, 201);
@@ -12,14 +12,30 @@ html {
   --text-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-html {
+ html[data-theme="dark"] {
     --background-color: #1e1e1e;
     --card-background-color: #121212; 
     --link-color: rgb( 100, 210, 255);
     --text-color: white;
     --text-color: white;
-}
+  }
+
+@media (prefers-color-scheme: dark) {
+html, html[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --card-background-color: #121212; 
+    --link-color: rgb( 100, 210, 255);
+    --text-color: white;
+    --text-color: white;
+  }
+
+  html[data-theme="light"] {
+  --background-color: white;
+  --card-background-color: white; 
+  --link-color: rgb(0, 112, 201);
+  --text-color: black;
+  --text-color: black;
+  }
 }
 
 .card-container {
