@@ -1,15 +1,35 @@
 - name: Will
   img: logo.jpg
   location: London, UK
+  linkdin: https://www.linkedin.com/in/
+  twitter: https://twitter.com/
+  resume: https://www.x.com/
+  github: https://github.com/
 
 - name: Amanda
   img: amanda.jpg
   location: New York City, USA
+  linkdin: https://www.linkedin.com/in/
+  twitter: https://twitter.com/
+  resume: https://www.x.com/
+  github: https://github.com/
+
 
 - name: Aaron
   img: aaron.jpg
   location: London, UK
+  linkdin: https://www.linkedin.com/in/
+  twitter: https://twitter.com/
+  resume: https://www.x.com/
+  github: https://github.com/
+
+
 
 - name: Swift
   img: swift.jpg
   location: New York City, USA
+  linkdin: https://www.linkedin.com/in/
+  twitter: https://twitter.com/
+  resume: https://www.x.com/
+  github: https://github.com/
+
