@@ -12,27 +12,11 @@
 
 
 .social-icon {
-  height: 1.7vw;
-  padding: 0px 0px 5px 5px;
+  height: 1.5vw;
+  padding: 0px 3px 0px 0px;
   margin-bottom: 3px;
 }
 
-
-.socials {
-  border: 1px solid rgb(192, 192, 192);
-  width: 16vw;
-  height: auto;
-
-  legend {
-    font-size: .9vw;
-    color: rgb(143, 143, 143);
-    width: auto;
-    padding-right: 10px;
-    margin-bottom: 0;
-    margin-left: 0.8vw;
-  }
-
-}
 
 @media only screen and (max-width: 1500px) {
   .card-container {
