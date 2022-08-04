@@ -1,14 +1,17 @@
 - title: Online Shopping App
-  event: MLH Prep Pod Project
-  date: Fall 2021  - Batch 4.5
+  event: MLH Prep Portfolio
+  date: 22.AUG.PREP.1 Pod
+  img: Shopping.png
   page-name: project
 
 - title: Todo List
-  event: MLH Prep Pod Project
-  date: Fall 2021  - Batch 4.5
-  page-name: project
+  event: MLH Prep Portfolio
+  date: 22.AUG.PREP.1 Pod
+  img: todo.jpg
+  page-name: todo-list
 
 - title: iOS App
-  event: MLH Prep Pod Project
-  date: Fall 2021  - Batch 4.5
-  page-name: project
+  event: MLH Prep Portfolio
+  date: 22.AUG.PREP.1 Pod
+  img: ios.jpg
+  page-name: ios-app
