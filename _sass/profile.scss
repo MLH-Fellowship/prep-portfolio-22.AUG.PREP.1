@@ -1,26 +1,48 @@
 .profile {
-    background-color: #133667 !important;
+  background-image: url('/assets/img/PodCollageNew.png');
+  background-color: #133667;
+  background-position: center;
+   background-size: cover;
+  width: 100%;
+  height: fit-content;
+
+
     text-align: center;
-    height: 320px;
+
     margin-bottom: 50px;
     h1 {
         font-size: 50px;
-        font-weight: 700;
+        font-weight: bolder;
         color: white;
     }
-    
+
     img {
         border-radius: 50%;
-        max-width: 100%;
+        width: 300px;
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: inline;        
+        display: inline;
         padding: 20px;
     }
-    
+
+    @media only screen and (max-width: 400px) {
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @media only screen and (max-width: 310px) {
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+
     .profile-picture {
         margin-bottom: 30px;
-        height: 200px;
+        height: fit-content;
     }
 }
