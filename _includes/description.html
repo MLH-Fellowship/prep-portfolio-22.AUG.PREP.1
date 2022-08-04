@@ -1,11 +1,21 @@
 <h2 id="description">Meet the Pod</h2>
 <div class="card-container">
-    {% for item in site.data.fellows %}
-    <div class="card">
-        <div class="info">
-            <p class="title"> {{ item.name }}</p>
-            <p class="location"> {{ item.location }}</p>
+        {% for item in site.data.fellows %}
+        <div class="card">
+                <div class="info">
+                        <p class="title"> {{ item.name }}</p>
+                        <p class="location"> {{ item.location }}</p>
+
+                        <a href="{{item.linkdin}}" target="_blank"><img class="social-icon"
+                                        src="../assets/img/social/linkedin.svg" /></a>
+                        <a href="{{item.twitter}}" target="_blank"><img class="social-icon"
+                                        src="../assets/img/social/twitter.svg" /></a>
+                        <a href="{{item.resume}}" target="_blank"><img class="social-icon"
+                                        src="../assets/img/social/resume.svg" /></a>
+                        <a href="{{item.github}}" target="_blank"><img class="social-icon"
+                                        src="../assets/img/social/github.svg" /></a>
+                </div>
+
         </div>
-    </div>
-    {% endfor %}
+        {% endfor %}
 </div>
