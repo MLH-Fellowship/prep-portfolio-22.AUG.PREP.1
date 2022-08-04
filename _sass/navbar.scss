@@ -1,9 +1,45 @@
+$navbar-height: 8em;
+
 .nav-bar {
     width: 100%;
     background-color: #133667;
     font-family: "Poppins", serif;
     font-weight: 700 !important;
-    padding-top: 10px;
+    height: $navbar-height;
+
+    .nav-content {
+        position: fixed;
+        z-index: 99;
+        background-color: inherit;
+        width: 100%;
+        top: 0;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: max-content auto auto;
+        padding: 20px;
+
+        #small-nav-logo {
+            img {
+                height: 1.8em;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .links {
+            padding: 0 50px;
+            grid-column: 2;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
 }
 
 .nav-content .logo-touch-target {
