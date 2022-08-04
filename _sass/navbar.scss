@@ -39,6 +39,10 @@ $navbar-height: 8em;
             justify-content: space-between;
         }
 
+        #theme-toggle {
+            grid-column: 3;
+            justify-self: end;
+        }
     }
 }
 
