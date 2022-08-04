@@ -1,15 +1,19 @@
 - name: Will
   img: logo.jpg
   location: London, UK
+  page-name: fellow
 
 - name: Amanda
   img: amanda.jpg
   location: New York City, USA
+  page-name: fellow
 
 - name: Aaron
   img: aaron.jpg
   location: London, UK
+  page-name: fellow
 
 - name: Swift
   img: swift.jpg
   location: New York City, USA
+  page-name: fellow
