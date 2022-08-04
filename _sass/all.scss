@@ -4,6 +4,40 @@
 @import 'profile';
 @import 'page';
 
+html, html[data-theme="light"] {
+  --background-color: white;
+  --card-background-color: white; 
+  --link-color: rgb(0, 112, 201);
+  --text-color: black;
+  --text-color: black;
+}
+
+ html[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --card-background-color: #121212; 
+    --link-color: rgb( 100, 210, 255);
+    --text-color: white;
+    --text-color: white;
+  }
+
+@media (prefers-color-scheme: dark) {
+html, html[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --card-background-color: #121212; 
+    --link-color: rgb( 100, 210, 255);
+    --text-color: white;
+    --text-color: white;
+  }
+
+  html[data-theme="light"] {
+  --background-color: white;
+  --card-background-color: white; 
+  --link-color: rgb(0, 112, 201);
+  --text-color: black;
+  --text-color: black;
+  }
+}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -30,7 +64,7 @@
 
 
 body {
-    background-color: #f5f5f9;
+    background-color: var(--background-color);
     margin-bottom: 50px;
 }
 h2 {
@@ -38,6 +72,7 @@ h2 {
     margin-top: 20px;
     font-weight: 700;
     text-align: center;
+    color: var(--text-color);
 }
 
 .card {
@@ -45,14 +80,17 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: white;
+    background-color: var(--card-background-color);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
 }
 
-a {
-    color: black;
+a:link {
+    color: var(--link-color);
+}
+a:hover{
+   color: var(--link-color);
 }
 
 .info {
@@ -65,16 +103,18 @@ a {
     .title {
         font-size: 500;
         font-weight: bold;
+        color: var(--text-color);
     }
 
     .location, .description {
         font-size: medium;
         font-weight: 400;
+        color: var(--text-color);
     }
 
     .dates {
         font-size: small;
-        color: #404040;
+        color: var(--secondary-text-color);
     }
 }
 
