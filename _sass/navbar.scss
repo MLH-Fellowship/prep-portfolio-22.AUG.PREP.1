@@ -18,7 +18,7 @@ $navbar-height: 8em;
 
     .nav-links {
         display: grid;
-        grid-template-columns: max-content auto auto;
+        grid-template-columns: auto auto auto;
         padding: 20px;
 
         #small-nav-logo {
@@ -36,7 +36,7 @@ $navbar-height: 8em;
             padding: 0 50px;
             grid-column: 2;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         #theme-toggle {
