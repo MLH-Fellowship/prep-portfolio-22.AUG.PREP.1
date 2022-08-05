@@ -3,15 +3,21 @@
   date: 22.AUG.PREP.1 Pod
   img: Shopping.png
   page-name: project
+  primary-tech: Django
+  secondary-tech: PostgreSQL
 
 - title: Todo List
   event: MLH Prep Portfolio
   date: 22.AUG.PREP.1 Pod
   img: todo.jpg
   page-name: todo-list
+  primary-tech: React
+  secondary-tech: Flutter
 
 - title: iOS App
   event: MLH Prep Portfolio
   date: 22.AUG.PREP.1 Pod
   img: ios.jpg
   page-name: ios-app
+  primary-tech: Swift
+  secondary-tech: Firebase

@@ -1,20 +1,31 @@
 <h2 id="projects">Projects</h2>
-<div class="projects-card-container card-container">
+<div class="projects-card-container">
   {% for item in site.data.projects %}
-  {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
-  {% else %}
-    <a>
-  {% endif %}
-  <div class="project-card card">
-    <div class="info">
-      <img class="project-img" src="./assets/img/{{ item.img }}" alt="logo" />
-      <p class="title">{{ item.title }}</p>
-      <p class="location">{{ item.event }}</p>
-      <p class="dates">{{ item.date }}</p>
-      <a href="/projects/{{ item.page-name }}"> View Project </a>
+  <div class="project-card">
+    <img src="./assets/img/{{ item.img }}" class="card__image" alt="logo" />
+    <div class="card__overlay">
+      <div class="card__header">
+        <img
+          class="card__thumb"
+          src="./assets/img/mlh-prep.png"
+          alt="mlh-prep"
+        />
+        <div class="card__header-text">
+          <h3 class="card__title">{{ item.title }}</h3>
+          <span class="card__status">{{ item.event }}</span><br />
+          <span class="card__status">{{ item.date }}</span>
+        </div>
+      </div>
+      <div class="card__description">
+        <div class="tags">
+          <h5>#{{ item.primary-tech }}</h5>
+          <h5>#{{ item.secondary-tech }}</h5>
+        </div>
+        <span class="project-button">
+          <a href="/projects/{{ item.page-name }}"> View Project </a>
+        </span>
+      </div>
     </div>
   </div>
-  </a>
   {% endfor %}
 </div>
