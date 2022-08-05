@@ -1,7 +1,12 @@
-<h2>Projects</h2>
-<div class="projects-card-container">
+<h2 id="projects">Projects</h2>
+<div class="projects-card-container card-container">
   {% for item in site.data.projects %}
-  <div class="project-card">
+  {% if item.page-name %}
+    <a href="/projects/{{ item.page-name }}">
+  {% else %}
+    <a>
+  {% endif %}
+  <div class="project-card card">
     <div class="info">
       <img class="project-img" src="./assets/img/{{ item.img }}" alt="logo" />
       <p class="title">{{ item.title }}</p>
@@ -10,5 +15,6 @@
       <a href="/projects/{{ item.page-name }}"> View Project </a>
     </div>
   </div>
+  </a>
   {% endfor %}
 </div>

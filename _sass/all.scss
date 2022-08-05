@@ -66,9 +66,21 @@
   font-family: "Open Sans", sans-serif;
 }
 
+
+.social-icon {
+  height: 1.5vw;
+  padding: 0px 3px 0px 0px;
+  margin-bottom: 3px;
+}
+
+
 @media only screen and (max-width: 1500px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .social-icon {
+    height: 2vw;
   }
 }
 
@@ -76,11 +88,19 @@
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .social-icon {
+    height: 2vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr;
+  }
+
+  .social-icon {
+    height: 2vw;
   }
 }
 
@@ -88,6 +108,7 @@ body {
   background-color: #f5f5f9;
   margin-bottom: 50px;
 }
+
 h2 {
   margin-bottom: 20px;
   margin-top: 20px;
