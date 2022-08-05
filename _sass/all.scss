@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'profile';
 @import 'page';
+@import 'toggle_button';
 
 html, html[data-theme="light"] {
   --background-color: white;
@@ -32,6 +33,14 @@ html, html[data-theme="dark"] {
   --link-color: rgb(0, 112, 201);
   --text-color: #121212;
   }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 650ms !important;
+    transition-delay: 0 !important;
 }
 
 .card-container {

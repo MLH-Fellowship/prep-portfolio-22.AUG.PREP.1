@@ -3,8 +3,6 @@
         <a href="{{ '/' | relative_url }}" id="big-nav-logo">
             <div class="nav-logo">
                 <img src="./assets/img/mlh-prep.png" />
-                <a href="{{page.url}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a>
-                <script src="./assets/scripts/dark_mode.js"></script>
             </div>
         </a>
         <div class="nav-links">
@@ -16,11 +14,11 @@
                 <a href="{{ '#description' }}">Members</a>
                 <a href="{{ '#projects' }}">Projects</a>
             </div>
-            <a
-                    href="{{page.url}}"
-                    id="theme-toggle"
-                    style="cursor: pointer"
-                >Light mode</a>
+            <label class="switch">
+                <input type="checkbox" onclick="modeSwitcher()">
+                <div class="slider"></div>
+                <script src="./assets/scripts/dark_mode.js"></script>
+            </label>
         </div>
     </div>
 </header>
