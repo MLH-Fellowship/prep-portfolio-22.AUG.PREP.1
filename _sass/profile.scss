@@ -1,21 +1,28 @@
 .profile {
-    background-color: #133667 !important;
+  background-image: url('/assets/img/PodCollageNew.png');
+  background-color: #133667;
+  background-position: center;
+   background-size: cover;
+  width: 100%;
+  height: fit-content;
+
+
     text-align: center;
-    height: fit-content;
+
     margin-bottom: 50px;
     h1 {
         font-size: 50px;
-        font-weight: 700;
+        font-weight: bolder;
         color: white;
     }
-    
+
     img {
         border-radius: 50%;
         width: 300px;
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: inline;        
+        display: inline;
         padding: 20px;
     }
 
@@ -33,7 +40,7 @@
       }
     }
 
-    
+
     .profile-picture {
         margin-bottom: 30px;
         height: fit-content;
