@@ -1,5 +1,5 @@
 ---
-title: Online Shopping App
+title: iOS App
 layout: page
 ---
 
