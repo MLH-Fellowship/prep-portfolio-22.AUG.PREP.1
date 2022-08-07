@@ -1,3 +1,25 @@
+ html, html[data-theme="light"]  {
+    --background-color: white;
+    --text-color: black;
+  }
+
+  html[data-theme="dark"]{
+    --background-color: #1e1e1e;
+    --text-color: white;
+ }
+  
+  @media (prefers-color-scheme: dark) {
+  html, html [data-theme="dark"]{
+      --background-color: #1e1e1e;
+      --text-color: white;
+  }
+
+  html[data-theme="light"]{
+    --background-color: white;
+    --text-color: black;
+  }
+  }
+
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Open Sans", serif;
 }
@@ -7,7 +29,7 @@ h2 {
 }
 
 body {
-    background-color: #f5f5f9 !important;
+    background-color: var(--background-color);
     background-size: cover;
     width: auto!important; 
     overflow-x: hidden!important;
@@ -17,7 +39,7 @@ body {
 .banner {
     padding: 20px 0px 50px 0px;
     height: 150px;
-    background-color: #1d539f;
+    background-color: #133766;
 }
 
 .banner .logo {
@@ -48,7 +70,7 @@ body {
 .page h2 {
     text-align: left !important;
     font-weight: 800 !important;
-    color: black;
+    color: var(--text-color);
     margin-bottom: 0.5em;
 }
 
@@ -66,7 +88,7 @@ body {
 }
 
 .page p {
-    color: black;
+    color: var(--text-color);
     font-weight: 500;
 }
 
