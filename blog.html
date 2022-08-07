@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+
+<div class="banner">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/img/logo.svg" />
+            </a>
+        </div>
+        <div class="title">
+            {{ page.title }}
+        </div>
+    </div>
+</div>
+
+<div class="container page">
+    <h1>Welcome to the Pod Blog</h1>
+    <h2>Recent Posts: </h2>
+    <ul class="blog_list">
+        {% for post in site.posts %}
+        <li class="blog_title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
