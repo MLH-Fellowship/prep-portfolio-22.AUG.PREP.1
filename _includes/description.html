@@ -5,19 +5,10 @@
     <div class="info">
       <p class="title">{{ item.name }}</p>
       <p class="location">{{ item.location }}</p>
-
-      <a href="{{item.Linkedin}}" target="_blank"
-        ><img class="social-icon" src="../assets/img/social/linkedin.svg"
-      /></a>
-      <a href="{{item.Twitter}}" target="_blank"
-        ><img class="social-icon" src="../assets/img/social/twitter.svg"
-      /></a>
-      <a href="{{item.Resume}}" target="_blank"
-        ><img class="social-icon" src="../assets/img/social/resume.svg"
-      /></a>
-      <a href="{{item.Github}}" target="_blank"
-        ><img class="social-icon" src="../assets/img/social/github.svg"
-      /></a>
+      <a href="{{item.Linkedin}}" class="fa fa-linkedin"></a>
+      <a href="{{item.Twitter}}" class="fa fa-twitter"></a>
+      <a href="{{item.Github}}" class="fa fa-github"></a>
+      <a href="{{item.Resume}}" class="fa fa-file"></a>
     </div>
   </div>
   {% endfor %}

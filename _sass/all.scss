@@ -65,10 +65,18 @@ html.transition *:after {
   font-family: "Open Sans", sans-serif;
 }
 
-.social-icon {
-  height: 1.5vw;
-  padding: 0px 3px 0px 0px;
-  margin-bottom: 3px;
+
+/* Style all font awesome icons */
+.fa {
+  padding: 0px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
 }
 
 @media only screen and (max-width: 1500px) {
