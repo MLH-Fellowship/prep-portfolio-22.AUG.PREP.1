@@ -127,7 +127,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   margin: 20px 30px;
-  background-color: var(--card-background-color);
+  background-color: white;
   border-radius: 0.375rem;
   padding: 1.5em;
   font-size: 1.2em;
@@ -176,4 +176,37 @@ a:hover {
   img {
     width: 100%;
   }
+}
+
+
+.blog_list {
+  width: 50vw;
+  list-style-type: none;
+  padding: 0;
+
+  .blog_title {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+
+    a {
+      text-decoration: none;
+      padding: 5px 0px 3px 7px;
+      color: #404040;
+      width: 40vw;
+
+      &:hover {
+        color: cornflowerblue;
+      }
+    }
+  }
+}
+
+.post_body {
+  width: 60vw;
+  background-color: white;
+  margin: auto;
+  text-align: left;
+  padding: 2vw;
+  margin-top: 20px;
+
 }
