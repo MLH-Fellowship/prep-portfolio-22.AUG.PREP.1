@@ -1,9 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import 'navbar';
-@import 'profile';
-@import 'page';
-@import 'footer';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import "navbar";
+@import "profile";
+@import "page";
+@import "projects";
+
+.back-button {
+  color: white !important;
+  background-color: #1d539f;
+  font-size: medium;
+  border: none;
+  border-radius: 12px;
+  margin-top: 3rem;
+  padding: 0.7rem;
+}
+.back-button:hover {
+  background-color: #022c67;
+  text-decoration: none;
+
+}
 
 .card-container {
   display: grid;
@@ -11,13 +26,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
-
 .social-icon {
   height: 1.5vw;
   padding: 0px 3px 0px 0px;
   margin-bottom: 3px;
 }
-
 
 @media only screen and (max-width: 1500px) {
   .card-container {
@@ -49,9 +62,8 @@
   }
 }
 
-
 body {
-  background-color: #f5f5f9;
+  background-color: var(--background-color);
   margin-bottom: 50px;
 }
 
@@ -60,6 +72,7 @@ h2 {
   margin-top: 20px;
   font-weight: 700;
   text-align: center;
+  color: var(--text-color);
 }
 
 .card {
@@ -67,14 +80,19 @@ h2 {
   flex-direction: row;
   align-items: center;
   margin: 20px 30px;
+
   background-color: white;
-  border-radius: .375rem;
+  border-radius: 0.375rem;
+
   padding: 1.5em;
   font-size: 1.2em;
 }
 
-a {
-  color: black;
+a:link {
+  color: var(--text-color);
+}
+a:hover {
+  color: var(--link-color);
 }
 
 .info {
@@ -82,24 +100,26 @@ a {
     margin-top: 5px;
     margin: 0px;
     text-align: left;
+    color: var(--text-color);
   }
 
   .title {
     font-size: 500;
     font-weight: bold;
+    color: var(--text-color);
   }
 
   .location,
   .description {
     font-size: medium;
     font-weight: 400;
+    color: var(--text-color);
   }
 
   .dates {
     font-size: small;
-    color: #404040;
+    color: var(--text-color);
   }
-
 }
 
 .icon {
