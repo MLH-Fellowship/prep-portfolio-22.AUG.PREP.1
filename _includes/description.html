@@ -1,15 +1,18 @@
 <h2 id="description">Meet the Pod</h2>
 <div class="card-container">
   {% for item in site.data.fellows %}
-  <div class="card">
+  <div class="card fellow-data">
     <div class="info">
       <p class="title">{{ item.name }}</p>
       <p class="location">{{ item.location }}</p>
+
       <a href="{{item.Linkedin}}" class="fa fa-linkedin"></a>
       <a href="{{item.Twitter}}" class="fa fa-twitter"></a>
       <a href="{{item.Github}}" class="fa fa-github"></a>
       <a href="{{item.Resume}}" class="fa fa-file"></a>
+
     </div>
   </div>
   {% endfor %}
 </div>
+<script src="assets/scripts/commits.js"></script>
