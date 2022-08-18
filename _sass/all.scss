@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import "navbar";
+@import "footer";
 @import "profile";
 @import "page";
 @import "projects";
@@ -79,6 +80,18 @@ html.transition *:after {
 
 }
 
+.fab {
+  padding: 0px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+
+}
+
 @media only screen and (max-width: 1500px) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
@@ -127,7 +140,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   margin: 20px 30px;
-  background-color: white;
+  background-color: var(--card-background-color);
   border-radius: 0.375rem;
   padding: 1.5em;
   font-size: 1.2em;
@@ -203,10 +216,11 @@ a:hover {
 
 .post_body {
   width: 60vw;
-  background-color: white;
+  background-color: var(--background-color);
   margin: auto;
   text-align: left;
   padding: 2vw;
   margin-top: 20px;
 
 }
+
