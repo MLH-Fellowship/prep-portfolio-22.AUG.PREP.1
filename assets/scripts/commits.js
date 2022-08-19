@@ -1,5 +1,5 @@
-const commitURL = 'https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.AUG.PREP.1/commits';
-const prURL = 'https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.AUG.PREP.1/pulls';
+const commitURL = 'https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.AUG.PREP.1/commits?per_page=100';
+const prURL = 'https://api.github.com/repos/MLH-Fellowship/prep-portfolio-22.AUG.PREP.1/pulls?per_page=100&state=all';
 
 async function getData(url) {
     const response = await fetch(url);
@@ -30,12 +30,13 @@ async function getFellowsContributions() {
         }
         contributions[author].prs++;
     }
+    console.log(contributions)
     return contributions;
 }
 
 getFellowsContributions().then(contributions => {
     document.querySelectorAll('.fellow-data').forEach(fellow => {
-        const githubURL = fellow.querySelector('.github-icon').href;
+        const githubURL = fellow.querySelector('.fa-github').href;
         let text;
         if (contributions[githubURL]) {
             text = `Commits: ${contributions[githubURL].commits} PR: ${contributions[githubURL].prs}`;
