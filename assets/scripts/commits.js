@@ -35,7 +35,7 @@ async function getFellowsContributions() {
 
 getFellowsContributions().then(contributions => {
     document.querySelectorAll('.fellow-data').forEach(fellow => {
-        const githubURL = fellow.querySelector('.github-icon').href;
+        const githubURL = fellow.querySelector('.fa-github').href;
         let text;
         if (contributions[githubURL]) {
             text = `Commits: ${contributions[githubURL].commits} PR: ${contributions[githubURL].prs}`;
